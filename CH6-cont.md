@@ -65,7 +65,7 @@ rich interconnection among switches, racks:
 
 + DHCP request encapsulated in UDP, encapsulated in IP, encapsulated in 802.3 Ethernet
 
-+ Ethernet frame broadcast (dest: FFFFFFFFFFFF) on LAN, received at router running DHCP server
++ Ethernet frame broadcast (destination: FFFFFFFFFFFF) on LAN, received at router running DHCP server
 
 + Ethernet demuxed to IP demuxed, UDP demuxed to DHCP
 

@@ -36,7 +36,7 @@ Four key characteristics of a SDN architecture can be identified
   >
   > + open implementation of control plane
 
-![](D:/GoogleDrive/109學年度(上)/Data community/src/5-6.png)
+![](./src/5-6.png)
 
 ### SDN perspective: data plane switches
 
@@ -74,7 +74,7 @@ network-control apps:
 
 The OpenFlow protocol operates between an SDN controller and an SDN-controlled switch. The OpenFlow protocol operates over TCP 6653.
 
-![](D:/GoogleDrive/109學年度(上)/Data community/src/5-7.png)
+![](./src/5-7.png)
 
 #### Controller-to-switch messages
 
@@ -93,7 +93,7 @@ The OpenFlow protocol operates between an SDN controller and an SDN-controlled s
 
 #### Example of control/data plane interaction
 
-![](D:/GoogleDrive/109學年度(上)/Data community/src/5-8.png)
+![](./src/5-8.png)
 
 
 
@@ -107,7 +107,7 @@ The OpenFlow protocol operates between an SDN controller and an SDN-controlled s
 
 ### OpenDaylight (ODL) controller
 
-![](D:/GoogleDrive/109學年度(上)/Data community/src/5-9.png)
+![](./src/5-9.png)
 
 + OpenDaylight: ODL Lithium controller
 + network apps may be contained within, or be external to SDN controller
@@ -134,3 +134,4 @@ According to the rule of the IP protocol, the router discards the datagram and s
 
 ## 5-7 Network Management and SNMP
 
+`TODO`
