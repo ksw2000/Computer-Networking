@@ -2,7 +2,7 @@
 
 ## 6-1 \~ 6-4
 
-## 6.1 Link layer and LANs
+## 6-1 Link layer and LANs
 
 nodes: hosts and routers.
 
@@ -82,7 +82,7 @@ links: communication channels that connect adjacent nodes along communication pa
   
   + extracts datagram, passes to upper layer at receiving side.
 
-## 6.2 Error detection, correction
+## 6-2 Error detection, correction
 
 Error detection not 100% reliable!
 
@@ -151,7 +151,7 @@ e.g.
 > 
 > R = ?
 
-## 6.3 Multiple access protocols
+## 6-3 Multiple access protocols
 
 Two types of "links":
 
@@ -318,7 +318,7 @@ How does the CMTS know which cable modems have data to send in the first place? 
 
 When a collision is inferred, a cable modem uses binary exponential backoff to defer the retransmission
 
-## 6.4 LANs
+## 6-4 LANs
 
 ### MAC addresses
 

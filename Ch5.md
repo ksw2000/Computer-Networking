@@ -1,4 +1,4 @@
-# Chapter 5 Network Layer: The Control Plane
+# Chapter5 Network Layer: The Control Plane
 
 ## 5-1 Introduction
 
