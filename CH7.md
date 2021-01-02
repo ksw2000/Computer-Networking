@@ -4,10 +4,10 @@
 
 **wireless network taxonomy**
 
-|                   | single hop                                                   | multiple hops                                                |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| infrastructure    | host connects to base station (WIFI, WiMAX, cellular)        | host may have to relay through several wireless nodes to connect to larger Internet (mesh net) |
-| no infrastructure | no base station, no connection to larger Internet (Bluetooth, ad hoc nets) | no base station, no connection to larger Internet (MANET, VANET) |
+|                   | single hop                                                                 | multiple hops                                                                                  |
+| ----------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| infrastructure    | host connects to base station (WIFI, WiMAX, cellular)                      | host may have to relay through several wireless nodes to connect to larger Internet (mesh net) |
+| no infrastructure | no base station, no connection to larger Internet (Bluetooth, ad hoc nets) | no base station, no connection to larger Internet (MANET, VANET)                               |
 
 *ad hoc:* 無線隨意網路, ad hoc 源自拉丁文，意思是臨時、專用、特設的。ad hoc network 由節點與節點間的動態連結所形成。它不需要依賴一個既存的網路架構
 
@@ -106,7 +106,6 @@ sequenceDiagram
     and
     Destination-->>Source: ACK
     end
-
 ```
 
 #### 802.11 Addressing
@@ -172,39 +171,39 @@ correspondent gets foreign address of mobile, sends directly to mobile
 drawback：
 
 > correspondent 從 home agent 得到 care-of-address 後，若收話者移動到其他新的 visited network 時會不好處理。在 indirect 方法中，當收話者移動到其他新的 foreign network 時 home agent 會得到新的位址，而 correspondent 是透過收話者的 home agent 找到收話者的，所以完全不成問題。但在 direct 方法中，就出現問題了，當收話者在通話時移動，correspondent 根本無從得知(因為 correspondent 並不是透過 home agent 所以根本不知道)。
->
+> 
 > solution:
->
+> 
 > Suppose data is currently being forwarded to the mobile node in the foreign network where the mobile node was located when he session first started. We'll **identify the foreign agent in that foreign network where the mobile node was first found as the anchor foreign agent**. When the mobile node moves to a new foreign network, the mobile node registers with the new foreign agent, and the new foreign agent with the mobile node's new COA. When the anchor foreign agent receives an encapsulated datagram for a departed (離開的) mobile node, it can then re-encapsulate the datagram and forward it to the mobile node using the new COA. 
->
+> 
 > ![](./src/7-7.png)
 
 ## 7-6 Mobile IP
 
 > [RFC 3344](https://tools.ietf.org/html/rfc3344). Mobile IP has many features we've seen
->
+> 
 > 1. home agents
->
+> 
 > 2. foreign agents
->
+> 
 > 3. foreign-agent registration
->
+> 
 > 4. care-of-addresses
->
+> 
 > 5. encapsulation
->
+> 
 > Three components to standard
->
+> 
 > 1. agent discovery
->
+>    
 >    > Mobile IP defines the protocols used by a home or foreign agent to advertise its services to mobile nodes, and protocols for mobile nodes to solicit the services of a foreign or home agent.
->
+> 
 > 2. registration with home agent
->
+>    
 >    > Mobile IP defines the protocols used by the mobile node and/or foreign agent to register and deregister COAs with a mobile node's home agent
->
+> 
 > 3. **indirect routing** of datagrams
->
+>    
 >    > The standard also defines the manner in which datagrams are forwarded to mobile nodes by a home agent, including rules for forwarding datagrams, and several forms of encapsulation (RFC 2003, RFC 2004)
 
 ### Agent Discovery
