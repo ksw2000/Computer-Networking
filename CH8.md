@@ -1,15 +1,15 @@
-# CH8 Security
+# Chapter8 Security
 
-## 8-1 What is network security
+## 8-1 What is Network Security
 
-1. confidentiality
-2. authentication
-3. message integrity
-4. access and availability
+1. confidentiality: 資料不可被第三方取得
+2. authentication: 傳送雙方可互相識別身分
+3. message integrity: 資料不可被中途竄改或可偵測是否遭竄改
+4. access and availability: 服務必須對用戶來說是可使用的
 
-## 8-2 Principles of cryptography
+## 8-2 Principles of Cryptography
 
-## 8-3 Authentication, Message integrity
+## 8-3 Authentication, Message Integrity
 
 ### Authentication
 
@@ -80,7 +80,7 @@ When Alice wants Bob's public key:
 1. get Bob's certificate (Bob or elsewhere)
 2. apply CA's public key to Bob's certificate, get Bob's public key
 
-## 8-4 Securing e-mail
+## 8-4 Securing E-mail
 
 當 Alice 要寄信給 Bob 時
 
@@ -108,7 +108,7 @@ Bob 收訊時
 
 以上方法可以實現機密性和可認證性和資料完整性
 
-## 8-5 Securing TCP connections: SSL
+## 8-5 Securing TCP Connections: SSL
 
 ### A simple SSL
 
@@ -179,7 +179,7 @@ The solution to this problem is to **indicate in the type field whether the reco
 
 By including such a field, if Alice were to receive a TCP FIN before receiving a closure SSL record, she would know that something funny was going on.
 
-## 8-6 Network layer security: IPsec
+## 8-6 Network Layer Security: IPsec
 
 IPsec datagrams are sent between pairs of network entities, such as between two hosts, between two routers, or between a host and router
 
@@ -225,6 +225,6 @@ Large, geographically distributes deployments require an automated mechanism (�
 > 
 > A: It is used to set up SA in the IPsec protocol suite.
 
-## 8-7 Securing wireless LANs
+## 8-7 Securing Wireless LANs
 
-## 8-8 Operational security: firewalls and IDS
+## 8-8 Operational Security: Firewalls and IDS

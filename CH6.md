@@ -82,7 +82,7 @@ links: communication channels that connect adjacent nodes along communication pa
   
   + extracts datagram, passes to upper layer at receiving side.
 
-## 6-2 Error detection, correction
+## 6-2 Error Detection, Correction
 
 Error detection not 100% reliable!
 
@@ -151,7 +151,7 @@ e.g.
 > 
 > R = ?
 
-## 6-3 Multiple access protocols
+## 6-3 Multiple Access Protocols
 
 Two types of "links":
 

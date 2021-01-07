@@ -1,6 +1,6 @@
-# Chapter 9
+# Chapter9 Multimedia Networking
 
-## 9-1 Multimedia networking: Outline
+## 9-1 Multimedia Networking: Outline
 
 + streaming, stored audio video
   + streaming: can begin playout before downloading entire file
@@ -9,7 +9,7 @@
   + interactive nature of human-to-human conversation limits delay tolerance
 + streaming live audio, video
 
-## 9-2 Streaming stored video
+## 9-2 Streaming Stored Video
 
 continuous playout constraint: once client playout begins, playback must match original timing. But **network delays** are variable (**jitter**), so will need client-side buffer to match playout requirements
 
@@ -79,7 +79,7 @@ interleaving
 
 ![](./src/9-2.png)
 
-## 9-4 protocols for real-time conversational applications: RTP, SIP
+## 9-4 Protocols for Real-time Conversational Applications: RTP, SIP
 
 ### Real-Time Protocol (RTP)
 
@@ -219,7 +219,7 @@ SIP proxy analogous to local DNS server plus TCP setup
 
 ![](./src/9-4.png)
 
-## 9-5 Network support for multimedia
+## 9-5 Network Support for Multimedia
 
 three broad approaches towards providing network-level support for multimedia applications
 

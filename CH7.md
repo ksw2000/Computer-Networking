@@ -17,7 +17,7 @@
 
 *VANET:* 車載隨意行動網路(Vehicular ad-hoc network)
 
-## 7-2 Wireless links characteristics
+## 7-2 Wireless Links Characteristics
 
 important difference from wired link
 
@@ -121,7 +121,7 @@ sequenceDiagram
 + air-interface
 + MSC (Mobile switch center): connects cell to wired telephone net
 
-## 7-5 Principles: addressing and routing to mobile users
+## 7-5 Principles: Addressing and Routing to Mobile Users
 
 What is mobility?
 
@@ -212,7 +212,7 @@ drawback：
 
 **agent solicitation(招攬):** a mobile node wanting to learn about agents without waiting to receive an agent advertisement => broadcast ICMP with type 10.
 
-## 7-7 Handing mobility in cellular networks
+## 7-7 Handing Mobility in Cellular Networks
 
 Like mobile IP, **GSM adopts an indirect routing** approach, first routing the correspondent's call to the mobile user's home network and from there to the visited network. In GSM terminology, the mobile users' home network is referred to as the mobile user's **home public land mobile network (home PLMN)**, the home network maintains a database known as the **home location register (HLR)**.
 
